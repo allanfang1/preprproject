@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
+		<style>
+			.carousel-control-next-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='green' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+			}
+			
+			.carousel-control-prev-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='green' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+			}
+			
+			.card-text{
+			font-size: 0.8rem;
+			opacity: 0.5;
+			}
+			
+			.card-title{
+			color: green;
+			}
+			
+			.display-4 {
+			font-size: 2rem;
+			}
+			
+			.display-3{
+			font-size: 1.1rem;
+			}
+			
+			.nav-link {
+			color: green;
+			}
+			
+			.form-check-label{
+			opacity: 0.7;
+			}
+			
+		</style>
+		<title>Prepr</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img src="https://preprmedialive.s3.amazonaws.com/public/front/img/logo.png" width="65" height="35" alt="Prepr">
+			</a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"/>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sign Up</a>
+					</li>
+				</ul>
+			</div>
+			
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search Challenges, Labs, and Projects" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</nav>
+		
+		<div class="container-fluid">
+			<div class="pt-3">
+				<div class="text-muted">
+					<h1 class="display-4">Challenges</h1>
+				</div>
+			</div>
+			
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Browse</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Submitted</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Following</a>
+				</li>
+			</ul>
+			
+			<div class="pt-2">
+				<div class="text-muted">
+					<h1 class="display-3">Filters</h1>
+				</div>
+			</div>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="dropdown">
+							
+							<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;">
+								Select category:
+							</a>
+							
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="width: 100%">
+								<a class="dropdown-item" href="#">Incubator</a>
+								<a class="dropdown-item" href="#">Accelerators</a>
+								<a class="dropdown-item" href="#">Co-working Environments</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-2">				
+						<div class="btn-group btn-group-toggle" data-toggle="buttons">
+							<label class="btn btn-secondary active">
+								<input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+							</label>
+							<label class="btn btn-secondary">
+								<input type="radio" name="options" id="option2" autocomplete="off"> Radio
+							</label>
+						</div>
+					</div>
+					
+					<div class="col-sm-2">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">Private</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">Public</label>
+						</div>
+					</div>
+					
+					<div class="col-sm">
+						<div class="px-4">
+							<button type="button" class="btn btn-success float-right">Apply</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="py-5">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							
+							<div class="container">
+								<div class="card-deck">
+									<div class="card">
+										<img src="https://i.picsum.photos/id/1008/5616/3744.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">No Poverty Challenge</h5>
+											<p class="card-text">NRC is seeking a low cost system (unit cost <$25) that can continuously measure temperature, peripheral capillary oxygen saturation (SpO2), blood pressure (BP), pulse and respiration rates...</p>
+											</div>
+											
+											</div>
+											<div class="card">
+												<img src="https://i.picsum.photos/id/101/2621/1747.jpg" class="card-img-top" alt="...">
+												<div class="card-body">
+													<h5 class="card-title">Quality Education Challenge</h5>
+													<p class="card-text">The Public Health Agency of Canada (PHAC) and National Research Council (NRC) are seeking a solution that will diagnose individuals affected by COVID-19 within 3 days of the start... .</p>
+												</div>
+												
+											</div>
+											<div class="card">
+												<img src="https://i.picsum.photos/id/1012/3973/2639.jpg" class="card-img-top" alt="...">
+												<div class="card-body">
+													<h5 class="card-title">Good Health and Well-Being Challenge</h5>
+													<p class="card-text">The challenge we are facing is global and departmental. Globally, there is an accumulation of plastic with the equivalent of one tonne per person in existence. Considering that less... </p>
+												</div>
+												
+											</div>
+											<div class="card">
+												<img src="https://i.picsum.photos/id/1013/4256/2832.jpg" class="card-img-top" alt="...">
+												<div class="card-body">
+													<h5 class="card-title">Zero Hunger Challenge</h5>
+													<p class="card-text"></p>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="container">
+										<div class="card-deck">
+											<div class="card">
+												<img src="https://i.picsum.photos/id/1024/1920/1280.jpg" class="card-img-top" alt="...">
+												<div class="card-body">
+													<h5 class="card-title">COVID-19 Challenge - Low-cost monitoring system for COVID-19 patients</h5>
+													<p class="card-text">NRC is seeking a low cost system (unit cost <$25) that can continuously measure temperature, peripheral capillary oxygen saturation (SpO2), blood pressure (BP), pulse and respiration rates...</p>
+													</div>
+													
+													</div>
+													<div class="card">
+														<img src="https://i.picsum.photos/id/1023/3955/2094.jpg" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">COVID-19 Challenge - Point of Care & Home Diagnostic Kit for COVID-19</h5>
+															<p class="card-text">The Public Health Agency of Canada (PHAC) and National Research Council (NRC) are seeking a solution that will diagnose individuals affected by COVID-19 within 3 days of the start...</p>
+														</div>
+														
+													</div>
+													<div class="card">
+														<img src="https://i.picsum.photos/id/1025/4951/3301.jpg" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">Recycled Plastic Ceiling Tiles</h5>
+															<p class="card-text">The challenge we are facing is global and departmental. Globally, there is an accumulation of plastic with the equivalent of one tonne per person in existence. Considering that less... </p>
+														</div>
+														
+													</div>
+													<div class="card">
+														<img src="https://i.picsum.photos/id/1020/4288/2848.jpg" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">Diverting End of Life Vehicle Plastics from Landfills</h5>
+															<p class="card-text"></p>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+									
+								</div>
+							</div>
+						</div>
+						
+						<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+						<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+						
+					</body>
+				</html>											
