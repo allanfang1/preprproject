@@ -75,160 +75,284 @@
 				</div>
 			</div>
 			
-			<ul class="nav nav-tabs">
-				<li class="nav-item">
-					<a class="nav-link active" href="#">My Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Invited Projects</a>
-				</li>
-			</ul>
-			
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-6">
-						
-					</div>
-					
-					<div class="col-sm-2">				
-						
-					</div>
-					
-					<div class="col-sm-2">
-						
-					</div>
-					
-					<div class="col-sm">
-						<div class="pt-3">
-							<button type="button" class="btn btn-success float-right">+ Add Project</button>
-						</div>
-					</div>
+			<nav>
+				<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">My Projects</a>
+					<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Invited Projects</a>
 				</div>
-			</div>
-			
-			<div class="py-3">
-				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-					
-					<div class="carousel-inner">
-						<div class="carousel-item active">
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6">
+								
+							</div>
 							
-							<div class="container">
-								<div class="card-deck">
-									<div class="card">
-										<img src="https://i.picsum.photos/id/1008/5616/3744.jpg" class="card-img-top" alt="...">
-										<div class="card-body">
-											<h5 class="card-title">CareerMash Lab</h5>
-											<p class="card-text">NRC is seeking a low cost system (unit cost <$25) that can continuously measure temperature, peripheral capillary oxygen saturation (SpO2), blood pressure (BP), pulse and respiration rates...</p>
-											</div>
-											<div class="card-footer">
-												<a class="text-success" href="">Details</a>
-												<a class="text-danger" href="" style="float: right;">Delete</a>
-											</div>
-											</div>
-											<div class="card">
-												<img src="https://i.picsum.photos/id/101/2621/1747.jpg" class="card-img-top" alt="...">
-												<div class="card-body">
-													<h5 class="card-title">Cybersecurity Talent Alliance Lab</h5>
-													<p class="card-text">The Public Health Agency of Canada (PHAC) and National Research Council (NRC) are seeking a solution that will diagnose individuals affected by COVID-19 within 3 days of the start... .</p>
-												</div>
-											<div class="card-footer">
-												<a class="text-success" href="">Details</a>
-												<a class="text-danger" href="" style="float: right;">Delete</a>
-											</div>
-											</div>
-											<div class="card">
-												<img src="https://i.picsum.photos/id/1012/3973/2639.jpg" class="card-img-top" alt="...">
-												<div class="card-body">
-													<h5 class="card-title">COVID-19 Education System Lab</h5>
-													<p class="card-text">The challenge we are facing is global and departmental. Globally, there is an accumulation of plastic with the equivalent of one tonne per person in existence. Considering that less... </p>
-												</div>
-											<div class="card-footer">
-												<a class="text-success" href="">Details</a>
-												<a class="text-danger" href="" style="float: right;">Delete</a>
-											</div>
-											</div>
-											<div class="card">
-												<img src="https://i.picsum.photos/id/1013/4256/2832.jpg" class="card-img-top" alt="...">
-												<div class="card-body">
-												<h5 class="card-title">COVID-19 Prevention Lab</h5>
-												<p class="card-text"></p>
-											</div>
-											<div class="card-footer">
-												<a class="text-success" href="">Details</a>
-												<a class="text-danger" href="" style="float: right;">Delete</a>
-											</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="container">
-										<div class="card-deck">
-											<div class="card">
-												<img src="https://i.picsum.photos/id/1024/1920/1280.jpg" class="card-img-top" alt="...">
-												<div class="card-body">
-													<h5 class="card-title">COVID-19 Challenge - Low-cost monitoring system for COVID-19 patients</h5>
-													<p class="card-text">NRC is seeking a low cost system (unit cost <$25) that can continuously measure temperature, peripheral capillary oxygen saturation (SpO2), blood pressure (BP), pulse and respiration rates...</p>
-													</div>
-											<div class="card-footer">
-												<a class="text-success" href="">Details</a>
-												<a class="text-danger" href="" style="float: right;">Delete</a>
-											</div>
-											</div>
-													<div class="card">
-														<img src="https://i.picsum.photos/id/1023/3955/2094.jpg" class="card-img-top" alt="...">
-														<div class="card-body">
-															<h5 class="card-title">COVID-19 Challenge - Point of Care & Home Diagnostic Kit for COVID-19</h5>
-															<p class="card-text">The Public Health Agency of Canada (PHAC) and National Research Council (NRC) are seeking a solution that will diagnose individuals affected by COVID-19 within 3 days of the start...</p>
-														</div>
-											<div class="card-footer">
-												<a class="text-success" href="">Details</a>
-												<a class="text-danger" href="" style="float: right;">Delete</a>
-											</div>
-											</div>
-													<div class="card">
-														<img src="https://i.picsum.photos/id/1025/4951/3301.jpg" class="card-img-top" alt="...">
-														<div class="card-body">
-															<h5 class="card-title">Recycled Plastic Ceiling Tiles</h5>
-															<p class="card-text">The challenge we are facing is global and departmental. Globally, there is an accumulation of plastic with the equivalent of one tonne per person in existence. Considering that less... </p>
-														</div>
-											<div class="card-footer">
-												<a class="text-success" href="">Details</a>
-												<a class="text-danger" href="" style="float: right;">Delete</a>
-											</div>
-											</div>
-													<div class="card">
-														<img src="https://i.picsum.photos/id/1020/4288/2848.jpg" class="card-img-top" alt="...">
-														<div class="card-body">
-															<h5 class="card-title">Diverting End of Life Vehicle Plastics from Landfills</h5>
-															<p class="card-text"></p>
-														</div>
-											<div class="card-footer">
-												<a class="text-success" href="">Details</a>
-												<a class="text-danger" href="" style="float: right;">Delete</a>
-											</div>
-											</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-										<span class="sr-only">Previous</span>
-									</a>
-									<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-										<span class="carousel-control-next-icon" aria-hidden="true"></span>
-										<span class="sr-only">Next</span>
-									</a>
-									
+							<div class="col-sm-2">				
+								
+							</div>
+							
+							<div class="col-sm-2">
+								
+							</div>
+							
+							<div class="col-sm">
+								<div class="pt-3">
+									<button type="button" class="btn btn-success float-right">+ Add Project</button>
 								</div>
 							</div>
 						</div>
+					</div>
+					
+					<div class="py-3">
+						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+							
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									
+									<div class="container">
+										<div class="card-deck">
+											<div class="card">
+												<img src="https://i.picsum.photos/id/1008/5616/3744.jpg" class="card-img-top" alt="...">
+												<div class="card-body">
+													<h5 class="card-title">CareerMash Lab</h5>
+													<p class="card-text">NRC is seeking a low cost system (unit cost <$25) that can continuously measure temperature, peripheral capillary oxygen saturation (SpO2), blood pressure (BP), pulse and respiration rates...</p>
+													</div>
+													<div class="card-footer">
+														<a class="text-success" href="">Details</a>
+														<a class="text-danger" href="" style="float: right;">Delete</a>
+													</div>
+													</div>
+													<div class="card">
+														<img src="https://i.picsum.photos/id/101/2621/1747.jpg" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">Cybersecurity Talent Alliance Lab</h5>
+															<p class="card-text">The Public Health Agency of Canada (PHAC) and National Research Council (NRC) are seeking a solution that will diagnose individuals affected by COVID-19 within 3 days of the start... .</p>
+														</div>
+														<div class="card-footer">
+															<a class="text-success" href="">Details</a>
+															<a class="text-danger" href="" style="float: right;">Delete</a>
+														</div>
+													</div>
+													<div class="card">
+														<img src="https://i.picsum.photos/id/1012/3973/2639.jpg" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">COVID-19 Education System Lab</h5>
+															<p class="card-text">The challenge we are facing is global and departmental. Globally, there is an accumulation of plastic with the equivalent of one tonne per person in existence. Considering that less... </p>
+														</div>
+														<div class="card-footer">
+															<a class="text-success" href="">Details</a>
+															<a class="text-danger" href="" style="float: right;">Delete</a>
+														</div>
+													</div>
+													<div class="card">
+														<img src="https://i.picsum.photos/id/1013/4256/2832.jpg" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">COVID-19 Prevention Lab</h5>
+															<p class="card-text"></p>
+														</div>
+														<div class="card-footer">
+															<a class="text-success" href="">Details</a>
+															<a class="text-danger" href="" style="float: right;">Delete</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<div class="container">
+												<div class="card-deck">
+													<div class="card">
+														<img src="https://i.picsum.photos/id/1024/1920/1280.jpg" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">COVID-19 Challenge - Low-cost monitoring system for COVID-19 patients</h5>
+															<p class="card-text">NRC is seeking a low cost system (unit cost <$25) that can continuously measure temperature, peripheral capillary oxygen saturation (SpO2), blood pressure (BP), pulse and respiration rates...</p>
+															</div>
+															<div class="card-footer">
+																<a class="text-success" href="">Details</a>
+																<a class="text-danger" href="" style="float: right;">Delete</a>
+															</div>
+															</div>
+															<div class="card">
+																<img src="https://i.picsum.photos/id/1023/3955/2094.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">COVID-19 Challenge - Point of Care & Home Diagnostic Kit for COVID-19</h5>
+																	<p class="card-text">The Public Health Agency of Canada (PHAC) and National Research Council (NRC) are seeking a solution that will diagnose individuals affected by COVID-19 within 3 days of the start...</p>
+																</div>
+																<div class="card-footer">
+																	<a class="text-success" href="">Details</a>
+																	<a class="text-danger" href="" style="float: right;">Delete</a>
+																</div>
+															</div>
+															<div class="card">
+																<img src="https://i.picsum.photos/id/1025/4951/3301.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">Recycled Plastic Ceiling Tiles</h5>
+																	<p class="card-text">The challenge we are facing is global and departmental. Globally, there is an accumulation of plastic with the equivalent of one tonne per person in existence. Considering that less... </p>
+																</div>
+																<div class="card-footer">
+																	<a class="text-success" href="">Details</a>
+																	<a class="text-danger" href="" style="float: right;">Delete</a>
+																</div>
+															</div>
+															<div class="card">
+																<img src="https://i.picsum.photos/id/1020/4288/2848.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">Diverting End of Life Vehicle Plastics from Landfills</h5>
+																	<p class="card-text"></p>
+																</div>
+																<div class="card-footer">
+																	<a class="text-success" href="">Details</a>
+																	<a class="text-danger" href="" style="float: right;">Delete</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+											
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+									<div class="py-3">
+						<div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+							
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									
+									<div class="container">
+										<div class="card-deck">
+											<div class="card">
+												<img src="https://i.picsum.photos/id/1008/5616/3744.jpg" class="card-img-top" alt="...">
+												<div class="card-body">
+													<h5 class="card-title">CareerMash Lab</h5>
+													<p class="card-text">NRC is seeking a low cost system (unit cost <$25) that can continuously measure temperature, peripheral capillary oxygen saturation (SpO2), blood pressure (BP), pulse and respiration rates...</p>
+													</div>
+													<div class="card-footer">
+														<a class="text-success" href="">Details</a>
+														<a class="text-danger" href="" style="float: right;">Delete</a>
+													</div>
+													</div>
+													<div class="card">
+														<img src="https://i.picsum.photos/id/101/2621/1747.jpg" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">Cybersecurity Talent Alliance Lab</h5>
+															<p class="card-text">The Public Health Agency of Canada (PHAC) and National Research Council (NRC) are seeking a solution that will diagnose individuals affected by COVID-19 within 3 days of the start... .</p>
+														</div>
+														<div class="card-footer">
+															<a class="text-success" href="">Details</a>
+															<a class="text-danger" href="" style="float: right;">Delete</a>
+														</div>
+													</div>
+													<div class="card">
+														<img src="https://i.picsum.photos/id/1012/3973/2639.jpg" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">COVID-19 Education System Lab</h5>
+															<p class="card-text">The challenge we are facing is global and departmental. Globally, there is an accumulation of plastic with the equivalent of one tonne per person in existence. Considering that less... </p>
+														</div>
+														<div class="card-footer">
+															<a class="text-success" href="">Details</a>
+															<a class="text-danger" href="" style="float: right;">Delete</a>
+														</div>
+													</div>
+													<div class="card">
+														<img src="https://i.picsum.photos/id/1013/4256/2832.jpg" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">COVID-19 Prevention Lab</h5>
+															<p class="card-text"></p>
+														</div>
+														<div class="card-footer">
+															<a class="text-success" href="">Details</a>
+															<a class="text-danger" href="" style="float: right;">Delete</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<div class="container">
+												<div class="card-deck">
+													<div class="card">
+														<img src="https://i.picsum.photos/id/1024/1920/1280.jpg" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">COVID-19 Challenge - Low-cost monitoring system for COVID-19 patients</h5>
+															<p class="card-text">NRC is seeking a low cost system (unit cost <$25) that can continuously measure temperature, peripheral capillary oxygen saturation (SpO2), blood pressure (BP), pulse and respiration rates...</p>
+															</div>
+															<div class="card-footer">
+																<a class="text-success" href="">Details</a>
+																<a class="text-danger" href="" style="float: right;">Delete</a>
+															</div>
+															</div>
+															<div class="card">
+																<img src="https://i.picsum.photos/id/1023/3955/2094.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">COVID-19 Challenge - Point of Care & Home Diagnostic Kit for COVID-19</h5>
+																	<p class="card-text">The Public Health Agency of Canada (PHAC) and National Research Council (NRC) are seeking a solution that will diagnose individuals affected by COVID-19 within 3 days of the start...</p>
+																</div>
+																<div class="card-footer">
+																	<a class="text-success" href="">Details</a>
+																	<a class="text-danger" href="" style="float: right;">Delete</a>
+																</div>
+															</div>
+															<div class="card">
+																<img src="https://i.picsum.photos/id/1025/4951/3301.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">Recycled Plastic Ceiling Tiles</h5>
+																	<p class="card-text">The challenge we are facing is global and departmental. Globally, there is an accumulation of plastic with the equivalent of one tonne per person in existence. Considering that less... </p>
+																</div>
+																<div class="card-footer">
+																	<a class="text-success" href="">Details</a>
+																	<a class="text-danger" href="" style="float: right;">Delete</a>
+																</div>
+															</div>
+															<div class="card">
+																<img src="https://i.picsum.photos/id/1020/4288/2848.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">Diverting End of Life Vehicle Plastics from Landfills</h5>
+																	<p class="card-text"></p>
+																</div>
+																<div class="card-footer">
+																	<a class="text-success" href="">Details</a>
+																	<a class="text-danger" href="" style="float: right;">Delete</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+											
+										</div>
+									</div>
+								</div>
+									</div>
+							</div>
+							
+							
+						</div>
 						
 						<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-					
-	</body>
-</html>
+						<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+						
+					</body>
+				</html>								

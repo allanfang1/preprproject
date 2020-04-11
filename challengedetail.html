@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
+		<style>
+			.carousel-control-next-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='green' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+			}
+			
+			.carousel-control-prev-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='green' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+			}
+			
+			.card-text{
+			font-size: 0.8rem;
+			
+			}
+			
+			.card-title{
+			color: green;
+			}
+			
+			.display-4 {
+			font-size: 2rem;
+			}
+			
+			.display-3{
+			font-size: 1.1rem;
+			}
+			
+			.nav-link {
+			color: green;
+			}
+			
+			.form-check-label{
+			opacity: 0.7;
+			}
+		</style>
+		<title>Prepr</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img src="https://preprmedialive.s3.amazonaws.com/public/front/img/logo.png" width="65" height="35" alt="Prepr">
+			</a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"/>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sign Up</a>
+					</li>
+				</ul>
+			</div>
+			
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search Challenges, Labs, and Projects" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</nav>
+		
+		
+		
+		<div class="py-3">
+			<div class="container-fluid">
+				<div class="pt-1">
+					<div class="text-muted">
+						<h1 class="display-4">Challenge</h1>
+					</div>
+				</div>
+				<div class="card bg-white text-black">
+					<img src="https://i.picsum.photos/id/1008/5616/3744.jpg" class="card-img" alt="..." style="opacity:0.1;">
+					<div class="card-img-overlay">
+						<div class="row">
+							<div class="col-sm-9">
+								<h2 class="card-title" style="font-size: 3rem;">Front End Developer Work Challenge</h2>
+							</div>
+							
+							<div class="col-sm-1">				
+								<div class="pt-3">
+									<button type="button" class="btn btn-success float-right" style="width: 100%">Submit</button>
+								</div>
+							</div>
+							<div class="col-sm-1">				
+								<div class="pt-3">
+									<button type="button" class="btn btn-success float-right" style="width: 100%">Follow</button>
+								</div>
+							</div>
+							<div class="col-sm-1">				
+								<div class="pt-3">
+									<button type="button" class="btn btn-success float-right" style="width: 100%">Like</button>
+								</div>
+							</div>
+							
+						</div>
+						<h5>Apr 09th, 2020 - Apr 12th, 2020</h5>
+						<div class="row">
+							<div class="col-sm-8">
+								<h5 style="color: green; font-weight: 600;">Details</h5>
+								<p>Your task is to redesign a few key pages of the Prepr Network.
+									
+									Reimagine and create frontend webpages of the following pages (and possible sub-pages):
+									
+									<br>
+									</p><p style="font-style: italic;">
+									Explore page (https://preprlabs.org/)<br>
+									Projects page (https://preprlabs.org/myProjects)<br>
+									Challenges page (https://preprlabs.org/list/challenge)<br>
+									Challenge details page (https://preprlabs.org/challengeManager/front-end-developer-work-challenge)<br>
+									Labs page (https://preprlabs.org/joinedLab)</p><p>
+									
+									Do not be restrained by the current design and layout of the pages. However, do ensure that pages can perform their respective functions. Feel free to add additional details and functions, anything that you believe will result in the best user experience.
+									
+									
+									(eg. In the explore page, each challenge card can contain more information than just the description)
+									<br>
+									<br>
+									
+									You may use any frontend technologies you want. You do not need to create any backend functionality (you can hardcode details and images into the web pages).
+									<br>
+									<br>
+									
+									Submission Process: 
+									<br>
+									Please begin by creating a Project. Your Project should contain both the final output and a Github link to your source code. Please name all of your files and documents using the following convention:<br>
+									John_Smith_FrontEnd_Developer_Nameofyourfile.
+									<br>
+									Once the project is completed, you will be able to submit it here to the Work Challenge. 
+									
+									<br>
+									<br>
+									Evaluation Criteria: 
+									<br>
+									25% on your approach to tackling the problem and the steps you took to get to your solution and final deliverable<br>
+									25% on how well you used various tools & processes to tackle the challenge<br>
+								50% on the final solution and output of your challenge</p>
+							</div>
+							
+							<div class="col-sm">				
+								<h5 style="color: green; font-weight: 600;">Host:</h5>
+								<div class="row">
+									<div class="col-sm">
+										<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/organisation/YlyHSvMYpa6m2g22lybhG5ahOZMiLiABF4q8WEh0.png" style="width:100%; height: auto;">
+									</div>
+									<div class="col-sm-9">
+										<div class="pt-2">
+											<p class="card-title" style="color:deepskyblue; font-weight: 550; font-size: 2rem;">Prepr</p>
+										</div>
+									</div>
+									
+								</div>
+								<p>The Prepr Network connects students and start-ups to employees and employers in order to build skills, create verifiable portfolios and tackle challenges. We do this by creating dedicated labs for individuals and teams to co-learn and co-lab together in order to co-solve organizational challenges.</p>
+							</div>
+							
+							
+							
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="py-3">
+						<nav>
+							<div class="nav nav-tabs" id="nav-tab" role="tablist">
+								<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Submissions</a>
+								<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Discussion</a>
+								<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Members</a>
+							</div>
+						</nav>
+						<div class="tab-content" id="nav-tabContent">
+							<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+								<div class="container-fluid">
+									<div class="py-3">
+										<div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+											
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													
+													<div class="container">
+														<div class="card-deck">
+															<div class="card">
+																<img src="https://i.picsum.photos/id/1008/5616/3744.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">John's project</h5>
+																	<p class="card-text">Salad</p>
+																</div>
+																<div class="card-footer">
+																	<div class="row">
+																		<div class="col-sm-2">	
+																			<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" style="height: 1.5rem;">
+																		</div>
+																		<div class="col-sm">	
+																			<small class="text-secondary">John Smith</small>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="card">
+																<img src="https://i.picsum.photos/id/101/2621/1747.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">COVID-19 Challenge - Point of Care & Home Diagnostic Kit for COVID-19</h5>
+																	<p class="card-text">The Public Health Agency of Canada (PHAC) and National Research Council (NRC) are seeking a solution that will diagnose individuals affected by COVID-19 within 3 days of the start... .</p>
+																</div>
+																<div class="card-footer">
+																	<div class="row">
+																		<div class="col-sm-2">	
+																			<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" style="height: 1.5rem;">
+																		</div>
+																		<div class="col-sm">	
+																			<small class="text-secondary">John Smith</small>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="card">
+																<img src="https://i.picsum.photos/id/1012/3973/2639.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">Recycled Plastic Ceiling Tiles</h5>
+																	<p class="card-text">The challenge we are facing is global and departmental. Globally, there is an accumulation of plastic with the equivalent of one tonne per person in existence. Considering that less... </p>
+																</div>
+																<div class="card-footer">
+																	<div class="row">
+																		<div class="col-sm-2">	
+																			<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" style="height: 1.5rem;">
+																		</div>
+																		<div class="col-sm">	
+																			<small class="text-secondary">John Smith</small>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="card">
+																<img src="https://i.picsum.photos/id/1013/4256/2832.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">Diverting End of Life Vehicle Plastics from Landfills</h5>
+																	<p class="card-text"></p>
+																</div>
+																<div class="card-footer">
+																	<div class="row">
+																		<div class="col-sm-2">	
+																			<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" style="height: 1.5rem;">
+																		</div>
+																		<div class="col-sm">	
+																			<small class="text-secondary">John Smith</small>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="carousel-item">
+													<div class="container">
+														<div class="card-deck">
+															<div class="card">
+																<img src="https://i.picsum.photos/id/1024/1920/1280.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">Bob's Project</h5>
+																	<p class="card-text">I made this</p>
+																</div>
+																<div class="card-footer">
+																	<div class="row">
+																		<div class="col-sm-2">	
+																			<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" style="height: 1.5rem;">
+																		</div>
+																		<div class="col-sm">	
+																			<small class="text-secondary">John Smith</small>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="card">
+																<img src="https://i.picsum.photos/id/1023/3955/2094.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">Bill's Project</h5>
+																	<p class="card-text">he did this</p>
+																</div>
+																<div class="card-footer">
+																	<div class="row">
+																		<div class="col-sm-2">	
+																			<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" style="height: 1.5rem;">
+																		</div>
+																		<div class="col-sm">	
+																			<small class="text-secondary">John Smith</small>
+																		</div>
+																	</div>
+																	</div>
+																</div>
+																<div class="card">
+																<img src="https://i.picsum.photos/id/1025/4951/3301.jpg" class="card-img-top" alt="...">
+																<div class="card-body">
+																	<h5 class="card-title">Recycled Plastic Ceiling Tiles</h5>
+																	<p class="card-text">The challenge we are facing is global and departmental. Globally, there is an accumulation of plastic with the equivalent of one tonne per person in existence. Considering that less... </p>
+																</div>
+																<div class="card-footer">
+																	<div class="row">
+																		<div class="col-sm-2">	
+																			<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" style="height: 1.5rem;">
+																		</div>
+																		<div class="col-sm">	
+																			<small class="text-secondary">John Smith</small>
+																		</div>
+																	</div>
+																</div>
+																</div>
+																<div class="card">
+																	<img src="https://i.picsum.photos/id/1020/4288/2848.jpg" class="card-img-top" alt="...">
+																	<div class="card-body">
+																		<h5 class="card-title">Diverting End of Life Vehicle Plastics from Landfills</h5>
+																		<p class="card-text"></p>
+																	</div>
+																	<div class="card-footer">
+																		<div class="row">
+																		<div class="col-sm-2">	
+																			<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" style="height: 1.5rem;">
+																		</div>
+																		<div class="col-sm">	
+																			<small class="text-secondary">John Smith</small>
+																		</div>
+																	</div>
+																	</div>
+																</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+													<a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+														<span class="sr-only">Previous</span>
+													</a>
+													<a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+														<span class="carousel-control-next-icon" aria-hidden="true"></span>
+														<span class="sr-only">Next</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+									<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+									<div class="py-5">
+				<div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+					
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							
+							<div class="container">
+								<div class="card-deck">
+									<div class="card">
+										<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Joan</h5>
+											</div>
+											
+											</div>
+											<div class="card">
+												<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="card-img-top" alt="...">
+												<div class="card-body">
+													<h5 class="card-title">Joy</h5>
+												</div>
+												
+											</div>
+											<div class="card">
+												<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="card-img-top" alt="...">
+												<div class="card-body">
+													<h5 class="card-title">Jay</h5>
+												</div>
+												
+											</div>
+											<div class="card">
+												<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="card-img-top" alt="...">
+												<div class="card-body">
+													<h5 class="card-title">Jackson</h5>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="container">
+										<div class="card-deck">
+											<div class="card">
+												<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="card-img-top" alt="...">
+												<div class="card-body">
+													<h5 class="card-title">John</h5>
+													</div>
+													
+													</div>
+													<div class="card">
+														<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">Jacob</h5>
+														</div>
+														
+													</div>
+													<div class="card">
+														<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">Jasmine</h5>
+														</div>
+														
+													</div>
+													<div class="card">
+														<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="card-img-top" alt="...">
+														<div class="card-body">
+															<h5 class="card-title">Jeremy</h5>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+									
+								</div>
+							</div>
+									</div>
+				
+				<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+				
+			</body>
+		</html>										
